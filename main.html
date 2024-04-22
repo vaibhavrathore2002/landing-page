@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            position: relative;
+            z-index: 2;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo {
+            width: 100px;
+            height: auto;
+            margin-left: 20px;
+        }
+        header nav ul {
+            background-color: #333;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+        }
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+            padding: 10px;
+        }
+        header nav ul li a:hover {
+            color: #ffc107;
+        }
+
+        .nnav{
+            margin-top: -10%;
+            margin-right: -250%;
+            gap: 10%;
+        }
+
+        /* Main styles */
+        main {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 36px;
+            margin-top: 50px;
+            color: #333;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .cta-container {
+            margin-top: 50px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .cta-container h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        .cta-container p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+        .get-started-button {
+            background-color: #fff;
+            color: #4CAF50;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            border-radius: 30px;
+            transition: background-color 0.3s;
+        }
+        .get-started-button:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Features section styles */
+        .features {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .feature-box {
+            margin: 0 20px;
+            text-align: center;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .feature-box:hover {
+            transform: translateY(-10px);
+        }
+        .feature-icon {
+            font-size: 48px;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+        .feature-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .feature-description {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        /* Image section styles */
+        .image-container {
+            margin-top: 50px;
+        }
+        .landing-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            margin-top: 50px;
+            border-radius: 10px;
+            box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        footer a:hover {
+            color: #ffc107;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            header .logo {
+                margin-left: 10px;
+            }
+            header nav ul {
+                gap: 10px;
+            }
+            header nav ul li a {
+                padding: 8px;
+            }
+            h1 {
+                font-size: 28px;
+            }
+            .cta-container {
+                padding: 30px;
+            }
+            .cta-container h2 {
+                font-size: 28px;
+            }
+            .cta-container p {
+                font-size: 16px;
+            }
+            .get-started-button {
+                padding: 12px 24px;
+                font-size: 16px;
+            }
+            .features {
+                flex-direction: column;
+            }
+            .feature-box {
+                margin: 20px 0;
+            }
+            .landing-image {
+                border-radius: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="logo.png" alt="Logo" class="logo">
+            <nav>
+                <ul class="nnav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <h1>Welcome to Our Marketing Campaign</h1>
+        <div class="cta-container">
+            <h2>Get Started Today!</h2>
+            <p>Sign up now to receive exclusive offers.</p>
+            <button class="get-started-button" onclick="window.location.href='#'">Get Started</button>
+        </div>
+        <div class="features">
+            <div class="feature-box">
+                <i class="fas fa-globe feature-icon"></i>
+                <div class="feature-title">Global Reach</div>
+                <div class="feature-description">Connect with customers worldwide.</div>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-chart-line feature-icon"></i>
+                <div class="feature-title">Increased Conversions</div>
+                <div class="feature-description">Tailored landing pages to boost your sales.</div>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-cogs feature-icon"></i>
+                <div class="feature-title">Easy Integration</div>
+                <div class="feature-description">Seamless integration with your existing tools.</div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="OIP.jpeg" alt="Marketing Image" class="landing-image">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Marketing Company. All rights reserved. | <a href="#terms">Terms of Service</a> | <a href="#privacy">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
